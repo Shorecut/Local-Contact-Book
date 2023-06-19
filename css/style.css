@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url(https://images.hdqwalls.com/download/mission-on-saturn-4k-0b-1920x1080.jpg);
+}
+
+.contact-container {
+  width: 400px;
+  margin: 50px auto;
+}
+
+.add-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+#name,
+#surname,
+#num,
+#img {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+#add-submit {
+  box-shadow: inset 0px 0px 13px 3px #4c4ba9;
+  background: linear-gradient(to bottom, #ffffff 5%, #002758 100%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 9px 40px;
+  text-decoration: none;
+  outline: none;
+}
+#add-submit:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+#add-submit:active {
+  position: relative;
+  top: 1px;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.contact-item span {
+  margin-top: 10px;
+  color: white;
+}
+
+.edit-btn,
+.delete-btn {
+  margin-top: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#close-modal {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#edit-cancel,
+.edit-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}
+
+.contact-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

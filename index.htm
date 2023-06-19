@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="contact-list">
+      <form class="add-contact">
+        <input type="text" id="name" placeholder="Enter name" />
+        <input type="text" id="surname" placeholder="Enter surname" />
+        <input type="url" id="img" placeholder="Url" />
+        <input type="number" id="num" placeholder="Enter number" />
+        <button id="add-submit">Add</button>
+      </form>
+    </div>
+    <div id="contact-container"></div>
+
+    <div class="modal" id="edit-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Edit Contacts</h3>
+          <button id="close-modal">X</button>
+        </div>
+        <input type="text" id="edit-input-name" />
+        <input type="text" id="edit-input-surname" />
+        <input type="text" id="edit-input-img" />
+        <input type="number" id="edit-input-number" />
+
+        <div class="modal-footer">
+          <button id="edit-cancel">Cancel</button>
+          <button class="edit-submit">Save</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
